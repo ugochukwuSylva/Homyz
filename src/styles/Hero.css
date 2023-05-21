@@ -1,0 +1,320 @@
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  color: white;
+  padding: 0rem 8rem;
+  /* height: calc(100vh - 7rem); */
+  gap: 5rem;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: hidden;
+}
+
+.h-left {
+  position: relative;
+  z-index: 3;
+  min-width: 20rem;
+}
+
+.hero-text {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  color: #b2beb5;
+}
+
+.h-left .orangeCircle {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(
+    to left top,
+    #0d3961,
+    #295886,
+    #4279ac,
+    #5b9cd3,
+    #74c0fc
+  );
+
+  position: absolute;
+  border-radius: 50%;
+  right: 8rem;
+  top: 2rem;
+  z-index: -1;
+}
+
+.h-left h2 {
+  overflow: hidden;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  z-index: 999;
+}
+
+.h-right {
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  border: 5px solid #343434;
+  height: 33rem;
+  overflow-y: hidden;
+  min-width: 20rem;
+}
+
+.brightLight {
+  width: 13rem;
+  height: 13rem;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
+  border-radius: 50%;
+  filter: blur(8rem);
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20rem;
+  background-color: #e9ecef;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.searchBar {
+  border: none;
+  padding: 0rem 1rem;
+  outline: none;
+  font-family: Poppins, sans-serif;
+  font-size: 1.1rem;
+  background-color: #e9ecef;
+}
+
+.searchContainer button {
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  color: #e9ecef;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #0000cc;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8rem;
+  width: 6rem;
+}
+
+.searchContainer button:hover {
+  background-color: #003262;
+}
+
+.hero_image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.achievements {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.number {
+  font-size: 1.7rem;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.plus {
+  color: orange;
+}
+
+.achievements > span > :nth-child(2) {
+  font-size: 0.8rem;
+  color: #b2beb5;
+}
+
+/* media query (Adjusting to different screen size) 
+**************************************************
+*/
+
+@media (max-width: 78em) {
+  .hero_container {
+    gap: 1rem;
+  }
+  .hero_container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .hero-text {
+    margin-top: 2rem;
+  }
+  .searchContainer {
+    margin: 2rem 0rem;
+  }
+  span.h-right {
+    height: 30rem;
+  }
+
+  .h-right {
+    height: 22rem;
+  }
+}
+/*  */
+@media (max-width: 65rem) {
+  .achievements span > :nth-child(2) {
+    font-size: 0.7rem;
+  }
+}
+
+/*  */
+
+@media (max-width: 63em) {
+  .hero_container {
+    padding: 0 4rem;
+    height: auto;
+  }
+}
+/*  */
+@media (max-width: 52em) {
+  .hero_container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  span.h-right {
+    height: 25rem;
+  }
+
+  .searchContainer {
+    /* margin: 2rem 0rem; */
+    width: 15rem;
+  }
+}
+
+/*  */
+@media (max-width: 50em) {
+  /* .achievements {
+    text-align: start;
+  } */
+  .achievements span > :nth-child(1) {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .searchContainer {
+    padding: 0.4rem;
+  }
+}
+
+/*  */
+
+@media (max-width: 45em) {
+  .hero_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: auto;
+    height: 100vh;
+    gap: 16rem;
+    overflow: hidden;
+  }
+  .h-left h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  span.h-right {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .searchContainer {
+    width: 60%;
+    margin-top: 0.5rem;
+  }
+  .hero-text {
+    margin-top: 1rem;
+  }
+
+  .achievements span > :nth-child(2) {
+    font-size: 1rem;
+    color: white;
+  }
+  .achievements span > :nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+}
+
+/*  */
+@media (max-width: 26em) {
+  .hero_container {
+    padding: 0 2rem;
+  }
+  .h-left {
+    margin-left: 4rem;
+    /* padding: 0 1rem; */
+  }
+
+  .achievements > span > :nth-child(2) {
+    padding-right: 120rem;
+  }
+  .searchContainer {
+    width: 85%;
+  }
+}
+
+@media (max-width: 22em) {
+  .h-left .hero-text {
+    font-size: 0.2rem;
+  }
+}
+
+@media (max-width: 18em) {
+  .h-left h2 {
+    font-size: 2.2rem;
+    margin-left: 1rem;
+  }
+  .hero_container .hero-text {
+    font-size: 0.6rem;
+    margin-left: 1rem;
+  }
+
+  .searchContainer {
+    margin-left: 1rem;
+    width: 75%;
+  }
+
+  .hero-text {
+    font-size: 200rem;
+    margin-left: 3rem;
+  }
+
+  .achievements {
+    padding: 0 1rem;
+  }
+
+  .achievements > span > :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  * {
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero_container {
+    height: 100vh;
+  }
+}

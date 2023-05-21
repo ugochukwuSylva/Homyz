@@ -1,0 +1,197 @@
+.accord-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 10rem;
+  overflow-y: hidden;
+  margin-top: 3rem;
+}
+
+.a-left > :nth-child(1) {
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  border: 5px solid #e9ecef;
+  height: 33rem;
+  object-fit: cover;
+  width: 80%;
+}
+
+.a-left,
+.a-right {
+  height: 30rem;
+  overflow-y: hidden;
+}
+
+.a-right > :nth-child(1) {
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: 500;
+}
+
+.a-right > :nth-child(2) {
+  color: #114678;
+  margin-bottom: 0.4rem;
+}
+.a-right > :nth-child(3) {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+}
+
+.accordionItem {
+  margin-bottom: 2rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.accordionItem.expanded {
+  box-shadow: 2px 3px 10px #dee2e6;
+  border-radius: 0.6rem;
+}
+
+.accordionItemButton {
+  padding: 1rem;
+}
+
+.accordionBtnDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.accordionBtnDisplay > :nth-child(2) {
+  color: #114678;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.accordionBtnDisplay svg {
+  color: blue;
+}
+
+.accordionItemPanel {
+  padding: 0rem 0.9rem;
+}
+
+.accordionItemPanel p {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 64em) {
+  .accordionItemButton {
+    padding: 1rem 0;
+  }
+  .accordionBtnDisplay {
+    padding: 0.5rem;
+  }
+  .accord-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .accordionItemButton {
+    padding: 1rem;
+  }
+  .accordionBtnDisplay {
+    padding: 0rem 1rem;
+  }
+
+  .a-left {
+    max-width: 70%;
+    height: 23rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    text-align: center;
+  }
+
+  .a-right {
+    height: 26rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .accord-container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .a-right {
+    text-align: center;
+  }
+
+  .a-right h3 {
+    font-size: 1.5rem;
+  }
+  .a-right > :nth-child(1) {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .accordionItemButton {
+    padding: 0;
+  }
+  .accordionBtnDisplay {
+    padding: 0;
+  }
+}
+
+@media (max-width: 26em) {
+  .accord-container {
+    padding: 0 2rem;
+  }
+
+  .accordionItemButton {
+    padding: 0;
+  }
+  .accordionBtnDisplay {
+    padding: 0;
+  }
+
+  .a-right {
+    height: 38rem;
+  }
+
+  .a-right > :nth-child(1) {
+    font-size: 1.6rem;
+  }
+
+  .a-right > :nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .a-right > :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .accordionItemPanel p {
+    font-size: 1rem;
+  }
+
+  .accordionBtnDisplay > :nth-child(2) {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 18em) {
+  .accord-container {
+    padding: 0.3rem;
+  }
+  .a-right {
+    height: 40rem;
+  }
+  .contact_content {
+    height: 50rem;
+  }
+}

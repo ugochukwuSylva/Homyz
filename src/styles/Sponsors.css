@@ -1,0 +1,37 @@
+.sponsor_container {
+  padding: 0rem 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.sponsor_image {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media (max-width: 45em) {
+  .sponsor_image {
+    transform: scale(0.8);
+  }
+
+  .sponsor_container {
+    padding: 0rem 3rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .sponsor_container {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .sponsor_image {
+    width: 7rem;
+    height: 7rem;
+  }
+}

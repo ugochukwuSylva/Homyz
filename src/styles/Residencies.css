@@ -1,0 +1,143 @@
+.residence_container {
+  padding: 0rem 10rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.residence_container > div > :nth-child(1) {
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: 500;
+}
+
+.residence_container > div > :nth-child(2) {
+  color: #114678;
+  margin-bottom: 2rem;
+}
+
+.slide-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: max-content;
+  padding: 0.8rem;
+  transition: all 300ms ease-in;
+}
+
+.slide-design:hover {
+  background-color: #e8f0f7;
+  scale: 1.025;
+  box-shadow: 2px 3px 10px #dee2e6;
+}
+
+.slide-design > :nth-child(3) {
+  color: #114678;
+  font-weight: 700;
+}
+
+.slide-design > :nth-child(4) {
+  color: gray;
+  font-size: 0.6rem;
+}
+
+.slide-design img {
+  border-radius: 10px;
+  max-width: 15rem;
+}
+
+/* .swiper-horizontal {
+  overflow: visible;
+} */
+
+.swiper-slide:hover {
+  box-shadow: 2px 3px 10px #dee2e6;
+}
+
+.swiper-wrapper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.btnContainer {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 34em) {
+  .residence_container {
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide-design {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .residence_container > div {
+    text-align: center;
+  }
+
+  .residence_container > div > .popResidence {
+    font-size: 1rem;
+  }
+
+  .residence_container > div > .bestChoice {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .residence_container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .residence_container {
+    padding: 0 2rem;
+  }
+
+  .slide-design > :nth-child(2) {
+    font-size: 1.3rem;
+  }
+
+  .slide-design > :nth-child(3) {
+    font-size: 1.3rem;
+  }
+
+  .slide-design > :nth-child(4) {
+    font-size: 1rem;
+  }
+
+  .residence_container div > :nth-child(2) {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 18em) {
+  .residence_container {
+    padding: 0.3rem;
+  }
+}
