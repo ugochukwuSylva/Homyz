@@ -16,5 +16,5 @@ body {
 
 .hero-header_container {
   background-color: #010b13;
-  overflow-x: hidden;
+  position: relative;
 }

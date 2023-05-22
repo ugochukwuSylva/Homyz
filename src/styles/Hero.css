@@ -8,7 +8,6 @@
   gap: 5rem;
   justify-content: center;
   align-items: flex-start;
-  overflow-x: hidden;
 }
 
 .h-left {
@@ -26,13 +25,13 @@
 .h-left .orangeCircle {
   width: 4rem;
   height: 4rem;
-  background: linear-gradient(
-    to left top,
-    #0d3961,
-    #295886,
-    #4279ac,
-    #5b9cd3,
-    #74c0fc
+  background-image: linear-gradient(
+    to left,
+    #fab005,
+    #f8a701,
+    #f69e00,
+    #f39500,
+    #f08c00
   );
 
   position: absolute;
